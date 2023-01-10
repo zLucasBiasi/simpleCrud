@@ -1,7 +1,12 @@
+import { TaskCard } from "../components/TaskCard";
+import { HomeTemplate } from "../template/Home/home";
+
 export default function Home() {
   return (
     <>
-      <h1>hello World!</h1>
+      <HomeTemplate>
+        <TaskCard task="Tirar o lixo" />
+      </HomeTemplate>
     </>
   );
 }

@@ -1,4 +1,4 @@
-export const themes = {
+export const theme = {
   colors: {
     background: "#0A0A0A",
     cards: "#383838",
