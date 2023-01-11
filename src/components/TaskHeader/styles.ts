@@ -15,6 +15,25 @@ export const Section = styled.section`
   `}
 `;
 
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0 2rem;
+`;
+
+export const Input = styled.input`
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid ${theme.colors.background};
+    padding: 0.2rem 0;
+    width: 25rem;
+
+    outline: 0;
+  `}
+`;
+
 export const Icon = styled(Image)`
   ${({ theme }) => css`
     width: 3rem;

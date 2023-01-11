@@ -6,7 +6,10 @@ export const TaskHeader = () => {
   return (
     <>
       <S.Section>
-        <h2>Adicionar nova tarefa</h2>
+        <S.Wrapper>
+          <label htmlFor="create">create new task</label>
+          <S.Input id="create" type="text" />
+        </S.Wrapper>
 
         <div>
           <S.Icon src={More} alt="Icone de lapis para editar" />
