@@ -6,9 +6,9 @@ import {
   useState,
 } from "react";
 
-type TaskType = { id: string; name: string }[];
+type TaskType = { id: string; name: string | null }[];
 interface addTaskType {
-  list: { id: string; name: string }[];
+  list: { id: string | null; name: string | null }[];
   setList: Dispatch<SetStateAction<TaskType>>;
 }
 

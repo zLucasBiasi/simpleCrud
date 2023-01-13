@@ -12,13 +12,30 @@ export const TaskCard = ({ task, id }: { task: string; id: string }) => {
   const removeTask = () => {
     setList((prev) => prev.filter((item) => item.id !== id));
   };
+
+  const editTask = () => {
+    const editTask = prompt("O que deseja colocar no lugar?");
+    setList((prev) =>
+      prev?.map((item) => {
+        if (item.id === id) {
+          return { ...item, name: editTask };
+        }
+        return item;
+      })
+    );
+  };
+
   return (
     <>
       <S.Section>
         <h2>{task}</h2>
 
         <S.Actions>
-          <S.Icon src={Edit} alt="Icone de lapis para editar" />
+          <S.Icon
+            src={Edit}
+            alt="Icone de lapis para editar"
+            onClick={editTask}
+          />
           <S.Icon
             src={Delete}
             alt="Icone de lixeira para remover"
