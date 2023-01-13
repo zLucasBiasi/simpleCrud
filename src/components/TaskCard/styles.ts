@@ -11,6 +11,10 @@ export const Section = styled.form`
     background-color: ${theme.colors.cards};
     padding: 0 2rem;
     border-radius: 0.4rem;
+    @media (max-width: 790px) {
+      width: 90%;
+      height: 10rem;
+    }
   `}
 `;
 

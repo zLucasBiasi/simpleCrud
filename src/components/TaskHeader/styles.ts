@@ -12,6 +12,10 @@ export const Form = styled.form`
     padding: 0 2rem;
     border-radius: 0.4rem;
     margin-bottom: 3rem;
+    @media (max-width: 790px) {
+      width: 90%;
+      height: 10rem;
+    }
   `}
 `;
 
@@ -19,6 +23,12 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 0 2rem;
+`;
+
+export const Label = styled.label`
+  @media (max-width: 790px) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const Input = styled.input`
@@ -31,6 +41,10 @@ export const Input = styled.input`
     width: 25rem;
 
     outline: 0;
+
+    @media (max-width: 790px) {
+      width: 100%;
+    }
   `}
 `;
 
@@ -44,6 +58,11 @@ export const Icon = styled(Image)`
       cursor: pointer;
       background-color: ${theme.colors.background};
       border-radius: 0.4rem;
+    }
+
+    @media (max-width: 790px) {
+      width: 80%;
+      height: 80%;
     }
   `}
 `;

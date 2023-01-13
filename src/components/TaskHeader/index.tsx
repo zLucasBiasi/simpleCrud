@@ -28,7 +28,7 @@ export const TaskHeader = () => {
         }}
       >
         <S.Wrapper>
-          <label htmlFor="create">create new task</label>
+          <S.Label htmlFor="create">create new task</S.Label>
           <S.Input
             id="create"
             type="text"

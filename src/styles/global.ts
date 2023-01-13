@@ -8,6 +8,7 @@ ${({ theme }) => css`
     box-sizing: border-box;
     font-size: 1.6rem;
     color: ${theme.colors.white};
+    overflow-x: hidden;
   }
   html {
     font-size: 62.5%;
