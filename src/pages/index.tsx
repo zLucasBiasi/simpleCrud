@@ -11,7 +11,11 @@ export default function Home() {
       <HomeTemplate>
         <TaskHeader />
         {list?.map((item, index) => (
-          <TaskCard key={index} id={item.id} task={item.name} />
+          <TaskCard
+            key={index}
+            id={item.id as string}
+            task={item.name as string}
+          />
         ))}
       </HomeTemplate>
     </>

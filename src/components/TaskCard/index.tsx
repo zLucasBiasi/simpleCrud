@@ -28,7 +28,7 @@ export const TaskCard = ({ task, id }: { task: string; id: string }) => {
   return (
     <>
       <S.Section>
-        <h2>{task}</h2>
+        <S.Task>{task}</S.Task>
 
         <S.Actions>
           <S.Icon
