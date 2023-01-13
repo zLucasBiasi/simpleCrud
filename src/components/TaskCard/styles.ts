@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styled, { css } from "styled-components";
 
-export const Section = styled.section`
+export const Section = styled.form`
   ${({ theme }) => css`
     width: 70rem;
     height: 5rem;

@@ -12,7 +12,10 @@ export const TaskHeader = () => {
     if (inputValue.trim().length === 0) {
       return;
     } else {
-      setList((prev) => [...prev, inputValue]);
+      setList((prev) => [
+        ...prev,
+        { name: inputValue, id: crypto.randomUUID() },
+      ]);
       setInputValue("");
     }
   };
