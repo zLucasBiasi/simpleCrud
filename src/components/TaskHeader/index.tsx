@@ -6,15 +6,13 @@ import * as S from "./styles";
 
 export const TaskHeader = () => {
   const [inputValue, setInputValue] = useState("");
-  const { setList, list } = useContext(newTaskContext);
+  const { setList } = useContext(newTaskContext);
 
   const addTask = () => {
     if (inputValue.trim().length === 0) {
       return;
     } else {
-      const oldTask = [...list];
-      oldTask.push(inputValue);
-      setList(oldTask);
+      setList((prev) => [...prev, inputValue]);
       setInputValue("");
     }
   };
