@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styled, { css } from "styled-components";
 
-export const Section = styled.section`
+export const Form = styled.form`
   ${({ theme }) => css`
     width: 70rem;
     height: 5rem;
@@ -46,4 +46,9 @@ export const Icon = styled(Image)`
       border-radius: 0.4rem;
     }
   `}
+`;
+
+export const Button = styled.button`
+  border: none;
+  background-color: transparent;
 `;

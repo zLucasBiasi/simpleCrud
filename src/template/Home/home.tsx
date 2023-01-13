@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { TaskHeader } from "../../components/TaskHeader";
 
 import * as S from "./styles";
 

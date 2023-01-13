@@ -1,13 +1,27 @@
-import { createContext, ReactNode, useState } from "react";
+import {
+  createContext,
+  Dispatch,
+  ReactNode,
+  SetStateAction,
+  useState,
+} from "react";
 
-interface addTaskType {}
+type TaskType = string[];
+interface addTaskType {
+  list: string[];
+  setList: Dispatch<SetStateAction<TaskType>>;
+}
 
-export const addNewTask = createContext<addTaskType>({} as addTaskType);
+export const newTaskContext = createContext<addTaskType>({} as addTaskType);
 
-export const newTaskProvider = ({ children }: { children: ReactNode }) => {
+export const NewTaskProvider = ({ children }: { children: ReactNode }) => {
+  const [list, setList] = useState<TaskType>([]);
+
   return (
     <>
-      <addNewTask.Provider value={""}>{children}</addNewTask.Provider>;
+      <newTaskContext.Provider value={{ list, setList }}>
+        {children}
+      </newTaskContext.Provider>
     </>
   );
 };
