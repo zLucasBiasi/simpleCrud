@@ -26,23 +26,23 @@ export const TaskCard = ({ task, id }: { task: string; id: string }) => {
   };
 
   return (
-    <>
-      <S.Section>
-        <S.Task>{task}</S.Task>
+    <S.Section>
+      <S.Task suppressHydrationWarning>{task}</S.Task>
 
-        <S.Actions>
-          <S.Icon
-            src={Edit}
-            alt="Icone de lapis para editar"
-            onClick={editTask}
-          />
-          <S.Icon
-            src={Delete}
-            alt="Icone de lixeira para remover"
-            onClick={removeTask}
-          />
-        </S.Actions>
-      </S.Section>
-    </>
+      <S.Actions>
+        <S.Icon
+          suppressHydrationWarning
+          src={Edit}
+          alt="Icone de lapis para editar"
+          onClick={editTask}
+        />
+        <S.Icon
+          suppressHydrationWarning
+          src={Delete}
+          alt="Icone de lixeira para remover"
+          onClick={removeTask}
+        />
+      </S.Actions>
+    </S.Section>
   );
 };
