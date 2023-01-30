@@ -17,13 +17,7 @@ export const Section = styled.form`
     }
   `}
 `;
-export const Task = styled.h2`
-  font-weight: 500;
-  @media (max-width: 790px) {
-    font-size: 1.4rem;
-    font-weight: 500;
-  }
-`;
+
 export const Actions = styled.div`
   display: flex;
   align-items: center;

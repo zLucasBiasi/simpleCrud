@@ -27,7 +27,7 @@ export const TaskCard = ({ task, id }: { task: string; id: string }) => {
 
   return (
     <S.Section>
-      <S.Task suppressHydrationWarning>{task}</S.Task>
+      <h2>{task}</h2>
 
       <S.Actions>
         <S.Icon
